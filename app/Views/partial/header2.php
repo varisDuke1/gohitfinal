@@ -141,7 +141,7 @@
         <a href="/"><img src="<?= base_url('assets/image/logo.png') ?>" alt="" srcset=""
                 class="d-flex align-items-center">
         </a>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <ul style="margin-rightt: 10cm;"class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-2 link-dark fw-bold" style="font-size: 24px !important;">Calendar</a>
             </li>
             <li><a href="/event" class="mx-5 nav-link px-2 link-dark fw-bold" style="font-size: 24px !important;">My
