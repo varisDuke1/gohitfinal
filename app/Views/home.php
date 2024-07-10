@@ -124,7 +124,7 @@
             </ul>
             <?php if (isset($nama)) { ?>
                 <button id="pay-button" class="buy-button">Buy Now!</button>
-                <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-n2aVs3WnHVM-87No"></script>
+                <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-7nv9Nia0G5lubrMD"></script>
                 <script type="text/javascript">
                     document.getElementById('pay-button').onclick = function () {
                         // SnapToken acquired from previous step
@@ -163,7 +163,7 @@
             </ul>
             <?php if (isset($nama)) { ?>
                 <button id="pay-button1" class="buy-button">Buy Now!</button>
-                <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-7nv9Nia0G5lubrMD"></script>
+                <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-6lbR-A_rkygo21F5"></script>
                 <script type="text/javascript">
                     document.getElementById('pay-button1').onclick = function () {
                         
@@ -201,7 +201,7 @@
             </ul>
             <?php if (isset($nama)) { ?>
                 <button id="pay-button2" class="buy-button">Buy Now!</button>
-                <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-n2aVs3WnHVM-87No"></script>
+                <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-6lbR-A_rkygo21F5"></script>
                 <script type="text/javascript">
                     document.getElementById('pay-button2').onclick = function () {
                         

@@ -39,6 +39,7 @@ $routes->get('/paymentsukses1', 'Payment::addTransaction1');
 $routes->get('/paymentsukses2', 'Payment::addTransaction2');
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::home');
+$routes->get('/late', 'Home::late');
 // $routes->get('/home', 'Home::home');
 $routes->get('/login', 'Home::login');
 $routes->post('/auth/login', 'Login::login');
@@ -56,7 +57,7 @@ $routes->get('/list/(:any)', 'DetailEvent::list/$1');
 $routes->get('/setting', 'Home::setting');
 $routes->get('/logout', 'Login::logout');
 $routes->get('/hots', 'Hotss::index');
-$routes->post('/join/add', 'join::join');
+$routes->post('/join/add', 'Join::join');
 $routes->post('save-data', 'Jjuara::saveData');
 $routes->post('save-data1', 'Jjuara::saveData1');
 $routes->post('save-data2', 'Jjuara::saveData2');

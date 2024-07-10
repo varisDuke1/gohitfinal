@@ -24,7 +24,8 @@ class Home extends BaseController
         \Midtrans\Config::$is3ds = true;
         
         if (!$session->has('id')) {
-            $latestProducts = $MyEvent->orderBy('id_event', 'DESC')->limit(3)->findAll(3);
+
+
             $data = [
                 'compe' => $latestProducts,
                 'title' => 'Home',
@@ -34,7 +35,7 @@ class Home extends BaseController
         } else {
             $userModel = new user();
             $user = $userModel->getUserById($namaPengguna);
-            $latestProducts = $MyEvent->orderBy('id_event', 'DESC')->limit(3)->findAll(3);
+            $latestProducts = $MyEvent->findAll(3);
             $params = array(
                 'transaction_details' => array(
                     'order_id' => rand(),
@@ -83,17 +84,7 @@ class Home extends BaseController
             echo view("home", $data);
         }
     }
-    public function late()
-    {
-        $session = session();
-        $MyEvent = new MyEventMod();
-        $latestProducts = $MyEvent->findAll();
-        $data = [
-            'compe' => $latestProducts,
-            'title' => 'Home',
-        ];
-        echo view("TimeLine", $data);
-    }
+
     public function login()
     {
         return view('login');

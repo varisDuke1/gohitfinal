@@ -30,7 +30,7 @@ class Join extends BaseController
         if ($existingRecord) {
             echo '<script>
                 alert("Anda sudah terdaftar dalam acara ini!");
-                window.location="' . base_url('/home') . '"
+                window.location="' . base_url('/') . '"
             </script>';
             return;
         }
@@ -43,7 +43,7 @@ class Join extends BaseController
         if ($participantCount >= $selectedevent[0]['participant']) {
             echo '<script>
                 alert("Maaf, acara ini sudah mencapai batas peserta maksimal.");
-                window.location="' . base_url('/home') . '"
+                window.location="' . base_url('/') . '"
             </script>';
             return;
         }
@@ -58,7 +58,7 @@ class Join extends BaseController
 
         echo '<script>
             alert("Selamat! Berhasil Menambah Data ");
-            window.location="' . base_url('/home') . '"
+            window.location="' . base_url('/') . '"
         </script>';
     }
 }
