@@ -91,6 +91,8 @@ $routes->post('save-data82', 'Jjuara::saveDataF2');
 $routes->post('save-data90', 'Jjuara::saveDataJ2');
 $routes->post('save-data91', 'Jjuara::saveDataJ1');
 $routes->post('save-data92', 'Jjuara::saveDataJ3');
+//API
+$routes->post('api/login', 'Android\Login_api::login');
 
 
 
