@@ -122,3 +122,28 @@
         </div>
     <?php } ?>
 </div>
+
+<?php if ($selectedevent[0]['Status_Acak'] == 'Belum'): ?>
+    <form method="post" action="<?= base_url('event/acakPeserta/' . $selectedevent[0]['id_event']) ?>">
+        <button type="submit" class="btn btn-warning">Acak Ulang</button>
+    </form>
+
+    <form method="post" action="<?= base_url('event/selesaiAcak/' . $selectedevent[0]['id_event']) ?>" onsubmit="return confirm('Yakin mengunci hasil acakan?')">
+        <button type="submit" class="btn btn-success mt-2">Selesai Acak</button>
+    </form>
+<?php else: ?>
+    <div class="alert alert-info">Hasil acakan telah dikunci. Tidak dapat diubah lagi.</div>
+<?php endif; ?>
+
+
+<?php foreach ($data as $d): ?>
+   <?= $d['id_user'] ?> - <?= $d['Badminton'] ?>
+<?php endforeach; ?>
+<?php if (!empty($pairing_result)): ?>
+    <h4>Hasil Pengacakan:</h4>
+    <ul>
+        <?php foreach ($pairing_result as $pair): ?>
+            <li><?= $pair[0] ?> vs <?= $pair[1] ?></li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>

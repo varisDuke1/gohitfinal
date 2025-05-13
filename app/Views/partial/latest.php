@@ -1,5 +1,5 @@
 <div class="text-center mt-4">
-    <h1><strong>Latest News</strong></h1>
+    <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-6">Latest News</h1>
     <div class="card-group mt-4">
         <div class="card mx-2">
             <img src="<?= base_url('assets/image/img-news.png') ?>" class="card-img-top" alt="...">

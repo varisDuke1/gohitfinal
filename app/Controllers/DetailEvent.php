@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\Fisher;
 use App\Models\User;
 use App\Models\MyEventMod;
 use App\Models\Peserta;
@@ -41,7 +42,7 @@ class DetailEvent extends BaseController
             $Q1 = $HH[0]['id81'];
             $Q2 = $HH[0]['id82'];
             $Q3 = $HH[0]['id83'];
-            $Q4 = $HH[0]['id84'];
+            $Q4 = $HH[0]['id84'];     
             $Q5 = $HH[0]['id85'];
             $Q6 = $HH[0]['id86'];
             $Q7 = $HH[0]['id87'];
@@ -290,6 +291,7 @@ class DetailEvent extends BaseController
             $semi1 = $semi2 = $semi3 = $semi4 = $semi5 = $semi6 = $semi7 = $semi8 = $semi9 = $semi10 = $semi11 = $semi12 = $semi13 = $semi14 = $semi15 = $semi16 = $Q1 = $Q2 = $Q3 = $Q4 = $Q5 = $Q6 = $Q7 = $Q8 = $P1 = $P2 = $P3 = $P4 = $final5 = $final6 = $j2 = $j1 = $j3 = null;
         }
         $selectedevent = $MyEvent->where('id_event', $idevent)->findAll();
+        $typeSport = isset($selectedevent[0]['type_sport']) ? $selectedevent[0]['type_sport'] : null;
         if (!$session->has('id')) {
             return redirect()->to(base_url('/home'));
         } else {
@@ -342,6 +344,14 @@ class DetailEvent extends BaseController
                 'id_event' => $idevent,
             ];
             $jjura->saveuser($wew);
+            $model = new Fisher();
+            $idUsers = array_column($tabelLainData, 'id_user');
+            $pointData = $model
+            ->select("id_user, $typeSport")
+            ->whereIn('id_user', $idUsers)
+            ->orderBy($typeSport, 'DESC') // DESC = dari nilai terbesar ke terkecil
+            ->findAll();
+            $pairs = $this->ACAK($pointData, $typeSport);
             $data = [
                 'HH1' => $semii1,
                 'HH2' => $semii2,
@@ -376,6 +386,8 @@ class DetailEvent extends BaseController
                 'JJ1' => $jj2,
                 'JJ2' => $jj1,
                 'JJ3' => $jj3,
+                'data' => $pointData,
+                'pairing_result' => $pairs,
                 'compe' => $tabelLainData,
                 'bra' => $tabelLainData,
                 'selectedevent' => $selectedevent,
@@ -386,6 +398,7 @@ class DetailEvent extends BaseController
                 'show_join_button' => $showJoinButton
             ];
             echo view("detaileventp", $data);
+            $this->ACAK($pointData, $typeSport);
         }
     }
 
@@ -423,4 +436,186 @@ class DetailEvent extends BaseController
             }
         }
     }
+    // public function ACAK($pointData, $typeSport)
+    // {
+    //     if (count($pointData) < 2) {
+    //         return view('pairing_view', ['error' => 'Jumlah peserta kurang dari 2.']);
+    //     }
+    
+    //     // Urutkan berdasarkan ranking / skor tertinggi di $typeSport
+    //     usort($pointData, function ($a, $b) use ($typeSport) {
+    //         return $b[$typeSport] <=> $a[$typeSport];
+    //     });
+    
+    //     // Bagi menjadi dua bagian
+    //     $midPoint = ceil(count($pointData) / 2);
+    //     $topRanked = array_slice($pointData, 0, $midPoint);
+    //     $others = array_slice($pointData, $midPoint);
+    
+    //     // Acak dengan Fisher-Yates
+    //     $this->fisherYatesShuffle($topRanked);
+    //     $this->fisherYatesShuffle($others);
+    
+    //     // Buat pasangan
+    //     $pairs = [];
+    //     $pairCount = min(count($topRanked), count($others));
+    
+    //     for ($i = 0; $i < $pairCount; $i++) {
+    //         $pair = [
+    //             $topRanked[$i]['id_user'], // Atau ['name'] kalau kamu punya
+    //             $others[$i]['id_user']
+    //         ];
+    
+    //         // Acak posisi pasangan
+    //         if (rand(0, 1) === 1) {
+    //             $pair = array_reverse($pair);
+    //         }
+    
+    //         $pairs[] = $pair;
+    //     }
+    
+    //     return view('pairing_view', ['pairs' => $pairs]);
+    // }
+
+    public function ACAK($pointData, $typeSport)
+    {
+        if (count($pointData) < 2) {
+            return []; // Kosong jika tidak cukup peserta
+        }
+
+        usort($pointData, function ($a, $b) use ($typeSport) {
+            return $b[$typeSport] <=> $a[$typeSport];
+        });
+
+        $midPoint = ceil(count($pointData) / 2);
+        $topRanked = array_slice($pointData, 0, $midPoint);
+        $others = array_slice($pointData, $midPoint);
+
+        $this->fisherYatesShuffle($topRanked);
+        $this->fisherYatesShuffle($others);
+
+        $pairs = [];
+        $pairCount = min(count($topRanked), count($others));
+
+        for ($i = 0; $i < $pairCount; $i++) {
+            $pair = [
+                $topRanked[$i]['id_user'],
+                $others[$i]['id_user']
+            ];
+
+            if (rand(0, 1) === 1) {
+                $pair = array_reverse($pair);
+            }
+
+            $pairs[] = $pair;
+        }
+
+        return $pairs;
+    }
+
+    
+
+    private function fisherYatesShuffle(&$array)
+    {
+        $count = count($array);
+        for ($i = $count - 1; $i > 0; $i--) {
+            $j = rand(0, $i);
+            $temp = $array[$i];
+            $array[$i] = $array[$j];
+            $array[$j] = $temp;
+        }
+    }  
+    public function acakPeserta($id_event)
+    {
+        $pesertaModel = new \App\Models\peserta();
+        $eventModel = new \App\Models\Eventm();
+        $bracketModel = new \App\Models\bracket();
+        $model = new Fisher();
+        $userModel = new user();
+
+        // Ambil data event untuk ambil type_sport dan status_acak
+        $selectedevent = $eventModel->where('id_event', $id_event)->findAll();
+        if (!$selectedevent) {
+            return redirect()->back()->with('error', 'Event tidak ditemukan.');
+        }
+
+        // ❗ Cek status acak
+        if ($selectedevent[0]['Status_Acak'] === 'Sudah') {
+            return redirect()->back()->with('error', 'Pengacakan sudah difinalisasi dan tidak dapat diubah lagi.');
+        }
+
+        $typeSport = $selectedevent[0]['type_sport'];
+        if (!$typeSport) {
+            return redirect()->back()->with('error', 'Jenis olahraga tidak ditemukan.');
+        }
+
+        // Ambil peserta untuk event ini
+        $primaryKeys = $pesertaModel->where('id_event', $id_event)->findColumn('id_user');
+        if (!$primaryKeys) {
+            return redirect()->back()->with('error', 'Peserta tidak ditemukan.');
+        }
+
+        $tabelLainData = $userModel->whereIn('id_user', $primaryKeys)->findAll();
+        $idUsers = array_column($tabelLainData, 'id_user');
+
+        // Ambil point data
+        $pointData = $model
+            ->select("id_user, $typeSport")
+            ->whereIn('id_user', $idUsers)
+            ->orderBy($typeSport, 'DESC')
+            ->findAll();
+
+        if (!$pointData || count($pointData) < 2) {
+            return redirect()->back()->with('error', 'Jumlah peserta tidak mencukupi.');
+        }
+
+        // Jalankan ACAK
+        $pairs = $this->ACAK($pointData, $typeSport);
+
+        // Ubah $pairs jadi flat list
+        $flatList = [];
+        foreach ($pairs as $pair) {
+            foreach ($pair as $id) {
+                $flatList[] = $id;
+            }
+        }
+
+        // Simpan ke bracket
+        $bracketData = ['id_event' => $id_event];
+        foreach ($flatList as $i => $id_peserta) {
+            $bracketData["peserta" . ($i + 1)] = $id_peserta;
+        }
+
+        $existing = $bracketModel->where('id_event', $id_event)->first();
+        if ($existing) {
+            $bracketModel->update($existing['id'], $bracketData);
+        } else {
+            $bracketModel->insert($bracketData);
+        }
+
+        // Status tetap "Belum" agar bisa diacak lagi
+        $eventModel->update($id_event, ['Status_Acak' => 'Belum']);
+
+        return redirect()->back()->with('success', 'Peserta berhasil diacak.');
+    }
+    public function selesaiAcak($id_event)
+    {
+        $eventModel = new \App\Models\Eventm();
+
+        $event = $eventModel->find($id_event);
+        if (!$event) {
+            return redirect()->back()->with('error', 'Event tidak ditemukan.');
+        }
+
+        if ($event['Status_Acak'] === 'Sudah') {
+            return redirect()->back()->with('info', 'Pengacakan sudah dikunci sebelumnya.');
+        }
+
+        // Ubah status acak jadi "Sudah"
+        $eventModel->update($id_event, ['Status_Acak' => 'Sudah']);
+
+        return redirect()->back()->with('success', 'Pengacakan berhasil difinalisasi. Tidak bisa diacak ulang.');
+    }
+
+  
 }

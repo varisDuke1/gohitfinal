@@ -1,0 +1,633 @@
+INFO - 2025-05-07 07:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:22 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:22 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:23 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:44 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:44 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:44 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:52 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:52 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:31:52 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:32:24 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:32:24 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:32:25 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:33:04 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:33:04 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:33:04 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:33:07 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:33:07 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:33:08 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:43:50 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+CRITICAL - 2025-05-07 07:43:54 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\list.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 9 APPPATH\Controllers\Home.php(136): view('list')
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->list()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:44:06 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+CRITICAL - 2025-05-07 07:44:09 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\list.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 9 APPPATH\Controllers\Home.php(136): view('list')
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->list()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+CRITICAL - 2025-05-07 07:44:12 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\list.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 9 APPPATH\Controllers\Home.php(136): view('list')
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->list()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:44:15 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:44:18 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+CRITICAL - 2025-05-07 07:44:25 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\list.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 9 APPPATH\Controllers\Home.php(136): view('list')
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->list()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:44:41 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+CRITICAL - 2025-05-07 07:44:43 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\list.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 9 APPPATH\Controllers\Home.php(136): view('list')
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->list()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:47:55 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('FootBall')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:48:19 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Running')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:49:59 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:50:16 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Badmintn')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:51:28 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:51:29 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:51:29 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in D:\TUGAS\KULIAH\P2MW\hehe\gohitfinal\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->orderBy(null, 'DESC')
+ 2 APPPATH\Controllers\DetailEvent.php(352): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:51:55 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Running')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:52:16 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Running')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:56:53 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('FootBall')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:57:03 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:57:17 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Badmintn')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:57:33 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Badmintn')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:57:36 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('Badmintn')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:57:44 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-07 07:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 07:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 07:58:33 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\allevent.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\allevent.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('allevent', [], true)
+ 9 APPPATH\Controllers\DetailEvent.php(435): view('allevent', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->list('css', 'style.css')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')

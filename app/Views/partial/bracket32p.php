@@ -93,8 +93,6 @@
             width: 30.8333%\9;
         }
 
-        .split-two {}
-
         .split-one .round {
             margin: 0 2.5% 0 0;
         }

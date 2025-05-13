@@ -36,7 +36,10 @@ class Formevent extends BaseController
             'participant' => $this->request->getPost("participan"),
             'location' => $this->request->getPost("location"),
             'upload' => $imageName,
-            'price' => $this->request->getPost("price")
+            'price' => $this->request->getPost("price"),
+            'Status_Acak' => "Belum",
+            'Persetujuan' => "Belum",
+            'Tingkatan' => "Null"
         );
         $model->saveuser($data);
         echo '<script>

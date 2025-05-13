@@ -23,7 +23,7 @@
         <?= $this->include('partial/latest') ?>
     </div>
     <div class="container mt-0" id="scroll-down">
-        <h1 class="mb-4 fw-bold"><strong>Choose Your Sport</strong></h1>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-6">Choose Your Sport</h1>
         <div class="d-flex justify-content-around flex-wrap">
             <a href="/list/Badminton" class="mx-4 my-3 p-2 d-flex align-items-center "
                 style="flex-basis: 25%; text-decoration: none; color: inherit;">
@@ -33,7 +33,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
                 </div>
             </a>
-            <a href="/list" class="mx-4 my-3 p-2 d-flex align-items-center "
+            <a href="/list/FootBall" class="mx-4 my-3 p-2 d-flex align-items-center "
                 style="flex-basis: 25%; text-decoration: none; color: inherit;">
                 <img src="<?= base_url('assets/image/football.png') ?>" alt="" class="me-3">
                 <div>
@@ -41,7 +41,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
                 </div>
             </a>
-            <a href="/list" class="mx-4 my-3 p-2 d-flex align-items-center "
+            <a href="/list/Pimpong" class="mx-4 my-3 p-2 d-flex align-items-center "
                 style="flex-basis: 25%; text-decoration: none; color: inherit;">
                 <img src="<?= base_url('assets/image/pimpong.png') ?>" alt="" class="me-3">
                 <div>
@@ -49,7 +49,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
                 </div>
             </a>
-            <a href="/list" class="mx-4 my-3 p-2 d-flex align-items-center "
+            <a href="/list/Running" class="mx-4 my-3 p-2 d-flex align-items-center "
                 style="flex-basis: 25%; text-decoration: none; color: inherit;">
                 <img src="<?= base_url('assets/image/running.png') ?>" alt="" class="me-3">
                 <div>
@@ -68,9 +68,7 @@
         </div>
     </div>
     <div class="container mt-3">
-        <center>
-            <h1 class="mb-4 fw-bold" id="scroll-down"><strong>Hot Event</strong></h1>
-        </center>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-6">Hot Event</h1>
         <div class="d-flex justify-content-around flex-wrap card-group mt-4" id="scroll-down">
             <?php if (!empty($compe)) {
                 foreach ($compe as $isi) {
@@ -105,11 +103,11 @@
             </center>
         </div>
     </div>
-    <div class="motivasi text-center mt-5" id="scroll-down">
-        <img src="<?= base_url('assets/image/motivate-home.png') ?>" alt="" srcset="" style="width: 80%;">
+    <div class="motivasi flex justify-center mt-5" id="scroll-down">
+        <img src="<?= base_url('assets/image/motivate-home.png') ?>" alt="" class="w-4/5">
     </div>
     <div class="plan-title" id="scroll-down">
-        <H1>Plan</H1>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-6">Plan</h1>
     </div>
     <div class="plans-container">
 

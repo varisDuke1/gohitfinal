@@ -32,7 +32,6 @@ $routes->get('/admin/dashboard', 'Admin\DashboardController::index'); //admin da
 $routes->get('/admin/turnamen/index', 'Admin\Tournament::index'); //admin Turney list
 $routes->get('/admin/customer/index', 'Admin\Customer::index'); // open admin customer data
 $routes->get('/admin/transaksi/index', 'Admin\Transaksi::index'); //admin history data from API midtrans
-
 // testing payment success
 $routes->get('/paymentsukses', 'Payment::addTransaction');
 $routes->get('/paymentsukses1', 'Payment::addTransaction1');
@@ -91,6 +90,11 @@ $routes->post('save-data82', 'Jjuara::saveDataF2');
 $routes->post('save-data90', 'Jjuara::saveDataJ2');
 $routes->post('save-data91', 'Jjuara::saveDataJ1');
 $routes->post('save-data92', 'Jjuara::saveDataJ3');
+$routes->post('event/acakPeserta/(:num)', 'DetailEvent::acakPeserta/$1');
+$routes->post('event/selesaiAcak/(:num)', 'DetailEvent::selesaiAcak/$1');
+$routes->post('/tournament/update', 'Tournament::update');
+
+
 //API
 $routes->post('api/login', 'Android\Login_api::login');
 

@@ -7,9 +7,8 @@
         <form method="POST" action="/form/add" enctype="multipart/form-data">
             <div class="formbold-input-wrapp formbold-mb-3">
                 <label for="firstname" class="formbold-form-label"> Title </label>
-
                 <div>
-                    <input type="text" name="title" placeholder="First name" class="formbold-form-input " />
+                    <input type="text" name="title" placeholder="Title" class="formbold-form-input " />
                 </div>
             </div>
 
@@ -30,7 +29,6 @@
 
             <div class="formbold-mb-3">
                 <label class="formbold-form-label">Type Sport</label>
-
                 <select class="formbold-form-input " name="type">
                     <option value="Badminton">Badminton</option>
                     <option value="FootBall">FootBall</option>

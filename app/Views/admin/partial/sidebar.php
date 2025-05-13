@@ -43,6 +43,7 @@
             <li class="menu-header">Data Master</li>
             <li><a class="nav-link" href="<?= base_url('admin/turnamen/index'); ?>"><i class="fas fa-list"></i> <span>Data Tournament</span></a></li>
             <li><a class="nav-link" href="<?= base_url('admin/customer/index'); ?>"><i class="fas fa-users"></i> <span>Data Customer</span></a></li>
+            <li><a class="nav-link" href="<?= base_url('admin/turnamen/index'); ?>"><i class="fas fa-users"></i> <span>wkwkwk</span></a></li>
             
           </ul>
 

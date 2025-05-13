@@ -9,7 +9,7 @@ class MyEventMod extends Model
     protected $table = 'event';
 
     protected $primaryKey = 'id_event'; // Primary key tabel pengguna
-    protected $allowedFields = ['id_user', 'title', 'date_column', 'time', 'organizer', 'type_sport', 'participant', 'location', 'upload', 'price', 'kategori']; // Kolom yang dapat diisi pada tabel pengguna
+    protected $allowedFields = ['id_user', 'title', 'date_column', 'time', 'organizer', 'type_sport', 'participant', 'location', 'upload', 'price', 'kategori', 'Status_Acak']; // Kolom yang dapat diisi pada tabel pengguna
 
     public function getUserById($id)
     {

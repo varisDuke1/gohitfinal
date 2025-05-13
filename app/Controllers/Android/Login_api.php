@@ -2,10 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
 use App\Models\User;
-use App\Models\MyEventMod;
-use App\Models\Eventm;
 use CodeIgniter\RESTful\ResourceController;
 
 class Login_api extends ResourceController
