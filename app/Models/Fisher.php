@@ -14,4 +14,10 @@ class Fisher extends Model
     {
         return $this->orderBy('rank', 'ASC')->findAll(); // Urutkan berdasarkan ranking
     }
+    public function getUserPointBySport($id_user, $typeSport)
+    {
+        return $this->where('id_user', $id_user)
+                    ->select($typeSport) // Misal 'Esport', 'Badminton', dll
+                    ->first();
+    }
 }

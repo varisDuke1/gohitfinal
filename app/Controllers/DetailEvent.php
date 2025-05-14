@@ -19,6 +19,7 @@ class DetailEvent extends BaseController
         $MyEvent = new MyEventMod();
         $peserta = new Peserta();
         $jjura = new Juara();
+        $fisherModel = new Fisher();
         $namaPengguna = $session->get('id');
         $selectedevent = $MyEvent->where('id_event', $idevent)->findAll();
         $HH = $jjura->where('id_event', $idevent)->findAll();
@@ -60,6 +61,23 @@ class DetailEvent extends BaseController
             // Set default values or handle the case when $HH is empty
             $semi1 = $semi2 = $semi3 = $semi4 = $semi5 = $semi6 = $semi7 = $semi8 = $semi9 = $semi10 = $semi11 = $semi12 = $semi13 = $semi14 = $semi15 = $semi16 = $Q1 = $Q2 = $Q3 = $Q4 = $Q5 = $Q6 = $Q7 = $Q8 = $P1 = $P2 = $P3 = $P4 = $final5 = $final6 = $j2 = $j1 = $j3 = null;
         }
+        $typeSport = isset($selectedevent[0]['type_sport']) ? $selectedevent[0]['type_sport'] : null;
+        $user = $userModel->getUserById($namaPengguna);
+        $pointData = $fisherModel->getUserPointBySport($user['id_user'], $typeSport);
+        $user_point = $pointData[$typeSport] ?? 0;
+        $level = "";
+        $can_join = false;
+        if ($user_point >= 0 && $user_point <= 500) {
+            $level = "Amatir";
+            if (isset($selectedevent[0]['Tingkatan']) ? $selectedevent[0]['Tingkatan'] : null == "Amatir") $can_join = true;
+        } elseif ($user_point > 500 && $user_point <= 900) {
+            $level = "Menengah";
+            if (isset($selectedevent[0]['Tingkatan']) ? $selectedevent[0]['Tingkatan'] : null == "Menengah") $can_join = true;
+        } elseif ($user_point > 900) {
+            $level = "Pro";
+            if (isset($selectedevent[0]['Tingkatan']) ? $selectedevent[0]['Tingkatan'] : null == "Pro") $can_join = true;
+        }
+        $max_participants = isset($selectedevent[0]['participant']) ? $selectedevent[0]['participant'] : null;
         if (!$session->has('id')) {
             $peserta1 = $peserta->where('id_event', $idevent)->findAll();
             $primaryKeys = array_column($peserta1, 'id_user');
@@ -236,7 +254,12 @@ class DetailEvent extends BaseController
                 'nama' => $user['nama'],
                 'id_user' => $user['id_user'],
                 'isi' => $latestProducts,
+                'pointData' => $pointData,
                 'title' => 'event',
+                'user_point' => $user_point,
+                'level' => $level,
+                'current_participants' => $countPeserta1,
+                'max_participants' => $max_participants,
                 'show_join_button' => $showJoinButton
             ];
             echo view("detailTour", $data);

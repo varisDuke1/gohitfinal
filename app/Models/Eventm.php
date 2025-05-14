@@ -10,7 +10,7 @@ class Eventm extends Model
     protected $primaryKey = 'id_event';
     protected $allowedFields = [
         'title', 'type_sport', 'date_column', 'time',
-        'participant', 'location', 'organizer', 'Persetujuan'
+        'participant', 'location', 'organizer', 'Persetujuan', 'Tingkatan'
     ];
     public function saveuser($data)
     {

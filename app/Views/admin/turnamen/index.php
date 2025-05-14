@@ -19,6 +19,7 @@
             <th>Location</th>
             <th>Organizer</th>
             <th>Persetujuan</th>
+            <th>Tingkatan</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -34,6 +35,7 @@
             <td><?= $evnt['location']; ?></td>
             <td><?= $evnt['organizer']; ?></td>
             <td><?= $evnt['Persetujuan']; ?></td>
+            <td><?= $evnt['Tingkatan']; ?></td>
             <td>
             <button class="btn btn-warning btn-sm editBtn"
               data-id="<?= $evnt['id_event']; ?>"
@@ -45,6 +47,7 @@
               data-location="<?= $evnt['location']; ?>"
               data-organizer="<?= $evnt['organizer']; ?>"
               data-persetujuan="<?= $evnt['Persetujuan']; ?>"
+              data-tingkatan="<?= $evnt['Tingkatan']; ?>"
               data-toggle="modal"
               data-target="#editModal">
               <i class="fas fa-edit"></i>
@@ -71,6 +74,7 @@
             <th>Location</th>
             <th>Organizer</th>
             <th>Persetujuan</th>
+            <th>Tingkatan</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -86,6 +90,7 @@
             <td><?= $evnt['location']; ?></td>
             <td><?= $evnt['organizer']; ?></td>
             <td><?= $evnt['Persetujuan']; ?></td>
+            <td><?= $evnt['Tingkatan']; ?></td>
             <td>
             <button class="btn btn-warning btn-sm editBtn"
               data-id="<?= $evnt['id_event']; ?>"
@@ -97,6 +102,7 @@
               data-location="<?= $evnt['location']; ?>"
               data-organizer="<?= $evnt['organizer']; ?>"
               data-persetujuan="<?= $evnt['Persetujuan']; ?>"
+              data-tingkatan="<?= $evnt['Tingkatan']; ?>"
               data-toggle="modal"
               data-target="#editModal">
               <i class="fas fa-edit"></i>
@@ -132,8 +138,8 @@
             <select name="type_sport" class="form-control" id="edit-type_sport" required>
               <option value="Esport">Esport</option>
               <option value="Badminton">Badminton</option>
-              <option value="Fottball">Fottball</option>
-              <option value="Pim_Pong">Pim_Pong</option>
+              <option value="FootBall">FootBall</option>
+              <option value="Pimpong">Pimpong</option>
               <option value="Running">Running</option>
             </select>
           </div>
@@ -174,6 +180,15 @@
               <option value="Sudah">Sudah</option>
             </select>
           </div>
+
+          <div class="form-group">
+            <label>Tingkatan</label>
+            <select name="Tingkatan" class="form-control" id="edit-Tingkatan" required>
+              <option value="Amatir">Amatir</option>
+              <option value="Menengah">Menengah</option>
+              <option value="Pro">Pro</option>
+            </select>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -201,7 +216,8 @@ $('.editBtn').on('click', function () {
   $('#edit-participant').val($(this).data('participant'));
   $('#edit-location').val($(this).data('location'));
   $('#edit-organizer').val($(this).data('organizer'));
-  $('#edit-Persetujuan').val($(this).data('persetujuan')); // lowercase!
+  $('#edit-Persetujuan').val($(this).data('persetujuan'));
+  $('#edit-Tingkatan').val($(this).data('tingkatan')); // lowercase!
 });
 </script>
 

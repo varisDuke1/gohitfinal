@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/style.css.map') ?>">
 <link rel="stylesheet" href="<?= base_url('css/main.css') ?>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <?= $this->include('partial/header2') ?>
 <div>
     <div class="limiter">
@@ -61,6 +62,35 @@
     </div>
 </div>
 <input type="hidden" name="lol" value="<?php echo $nama ?>" class="formbold-form-input" />
+    <div class="modal fade" id="approvalModal" tabindex="-1" aria-labelledby="approvalModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title" id="approvalModalLabel">Pemberitahuan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Event Anda <strong>belum disetujui</strong> oleh admin. Harap tunggu persetujuan sebelum melanjutkan.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Mengerti</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Show modal if event not approved -->
+    <?php if (isset($selectedevent[0]['Persetujuan']) && $selectedevent[0]['Persetujuan'] == 'Belum') : ?>
+    <script>
+        window.onload = function() {
+            var approvalModal = new bootstrap.Modal(document.getElementById('approvalModal'));
+            approvalModal.show();
+        };
+    </script>
+    <?php endif; ?>
 <div>
     <?= $this->include('partial/peserta') ?>
 </div>

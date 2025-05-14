@@ -21,6 +21,7 @@ class Tournament extends BaseController
             'location' => $this->request->getPost('location'),
             'organizer' => $this->request->getPost('organizer'),
             'Persetujuan' => $this->request->getPost('Persetujuan'),
+            'Tingkatan'    => $this->request->getPost('Tingkatan'),
         ];
 
         $tournamentModel->lol($id, $data);

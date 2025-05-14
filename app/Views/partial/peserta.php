@@ -136,7 +136,7 @@
 <?php endif; ?>
 
 
-<?php foreach ($data as $d): ?>
+<!-- <?php foreach ($data as $d): ?>
    <?= $d['id_user'] ?> - <?= $d['Badminton'] ?>
 <?php endforeach; ?>
 <?php if (!empty($pairing_result)): ?>
@@ -146,4 +146,4 @@
             <li><?= $pair[0] ?> vs <?= $pair[1] ?></li>
         <?php endforeach; ?>
     </ul>
-<?php endif; ?>
+<?php endif; ?> -->
