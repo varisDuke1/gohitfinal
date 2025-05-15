@@ -24,7 +24,7 @@ class Home extends BaseController
         \Midtrans\Config::$is3ds = true;
         
         if (!$session->has('id')) {
-            $latestProducts = $MyEvent->orderBy('id_event', 'DESC')->limit(3)->findAll(3);
+            $latestProducts = $MyEvent->where('Persetujuan', 'Sudah')->orderBy('id_event', 'DESC')->findAll(3);
             $data = [
                 'compe' => $latestProducts,
                 'title' => 'Home',
@@ -34,7 +34,7 @@ class Home extends BaseController
         } else {
             $userModel = new user();
             $user = $userModel->getUserById($namaPengguna);
-            $latestProducts = $MyEvent->orderBy('id_event', 'DESC')->limit(3)->findAll(3);
+            $latestProducts = $MyEvent->where('Persetujuan', 'Sudah')->orderBy('id_event', 'DESC')->limit(3)->findAll(3);
             $params = array(
                 'transaction_details' => array(
                     'order_id' => rand(),

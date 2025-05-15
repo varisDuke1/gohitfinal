@@ -124,17 +124,18 @@
 </div>
 
 <?php if ($selectedevent[0]['Status_Acak'] == 'Belum'): ?>
-    <form method="post" action="<?= base_url('event/acakPeserta/' . $selectedevent[0]['id_event']) ?>">
-        <button type="submit" class="btn btn-warning">Acak Ulang</button>
-    </form>
+    <div style="text-align: center; margin-top: 30px;">
+        <form method="post" action="<?= base_url('event/acakPeserta/' . $selectedevent[0]['id_event']) ?>" style="display: inline-block; margin: 10px;">
+            <button type="submit" class="btn btn-warning btn-lg shadow rounded-pill">🎲 Acak Ulang</button>
+        </form>
 
-    <form method="post" action="<?= base_url('event/selesaiAcak/' . $selectedevent[0]['id_event']) ?>" onsubmit="return confirm('Yakin mengunci hasil acakan?')">
-        <button type="submit" class="btn btn-success mt-2">Selesai Acak</button>
-    </form>
+        <form method="post" action="<?= base_url('event/selesaiAcak/' . $selectedevent[0]['id_event']) ?>" onsubmit="return confirm('Yakin mengunci hasil acakan?')" style="display: inline-block; margin: 10px;">
+            <button type="submit" class="btn btn-success btn-lg shadow rounded-pill">✅ Selesai Acak</button>
+        </form>
+    </div>
 <?php else: ?>
-    <div class="alert alert-info">Hasil acakan telah dikunci. Tidak dapat diubah lagi.</div>
+    <div class="alert alert-info text-center mt-4">🔒 Hasil acakan telah dikunci. Tidak dapat diubah lagi.</div>
 <?php endif; ?>
-
 
 <!-- <?php foreach ($data as $d): ?>
    <?= $d['id_user'] ?> - <?= $d['Badminton'] ?>

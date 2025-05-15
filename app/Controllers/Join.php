@@ -10,7 +10,6 @@ class Join extends BaseController
 {
     public function join()
     {
-        // Load the database library
         $session = session();
         $namaPengguna = $session->get('id');
         $db = \Config\Database::connect();
@@ -18,9 +17,17 @@ class Join extends BaseController
 
         $id_event = $this->request->getPost("idevent");
         $id_user = $this->request->getPost("iduser");
+
         $selectedevent = $MyEvent->where('id_event', $id_event)->findAll();
 
-        // Check if the user has already joined the event
+        // Ambil tambahan user (jika ada), default null
+        $id_user1 = $this->request->getPost('id_user1') ?: '';
+        $id_user2 = $this->request->getPost('id_user2') ?: '';
+        $id_user3 = $this->request->getPost('id_user3') ?: '';
+        $id_user4 = $this->request->getPost('id_user4') ?: '';
+
+
+        // Cek apakah user utama sudah terdaftar
         $existingRecord = $db->table('peserta')
             ->where('id_event', $id_event)
             ->where('id_user', $id_user)
@@ -35,7 +42,7 @@ class Join extends BaseController
             return;
         }
 
-        // Check if the maximum number of participants (8) has been reached
+        // Cek jumlah peserta event
         $participantCount = $db->table('peserta')
             ->where('id_event', $id_event)
             ->countAllResults();
@@ -48,12 +55,16 @@ class Join extends BaseController
             return;
         }
 
-        // If everything is valid, save the user data
+        // Simpan data peserta
         $model = new Peserta();
-        $data = array(
-            'id_event' => $id_event,
-            'id_user' => $namaPengguna,
-        );
+        $data = [
+            'id_event'  => $id_event,
+            'id_user'   => $namaPengguna,
+            'id_user1'  => $id_user1,
+            'id_user2'  => $id_user2,
+            'id_user3'  => $id_user3,
+            'id_user4'  => $id_user4,
+        ];
         $model->saveuser($data);
 
         echo '<script>

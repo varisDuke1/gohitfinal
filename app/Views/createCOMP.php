@@ -59,6 +59,11 @@
             </div>
 
             <div class="formbold-mb-3">
+                <label for="NOT" class="formbold-form-label"> Number Of Team </label>
+                <input type="number" name="NOT" placeholder="Max 5" max="5" class="formbold-form-input formbold-mb-3" />
+            </div>
+
+            <div class="formbold-mb-3">
                 <label for="address" class="formbold-form-label"> Location </label>
                 <input type="text" name="location" placeholder="Street address/Online" class="formbold-form-input formbold-mb-3" />
             </div>

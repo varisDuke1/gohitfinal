@@ -20,6 +20,7 @@ class DetailEvent extends BaseController
         $peserta = new Peserta();
         $jjura = new Juara();
         $fisherModel = new Fisher();
+        $allUsers = $userModel->findAll();
         $namaPengguna = $session->get('id');
         $selectedevent = $MyEvent->where('id_event', $idevent)->findAll();
         $HH = $jjura->where('id_event', $idevent)->findAll();
@@ -63,7 +64,7 @@ class DetailEvent extends BaseController
         }
         $typeSport = isset($selectedevent[0]['type_sport']) ? $selectedevent[0]['type_sport'] : null;
         $user = $userModel->getUserById($namaPengguna);
-        $pointData = $fisherModel->getUserPointBySport($user['id_user'], $typeSport);
+        $pointData = $fisherModel->getUserPointBySport(isset($user[0]['id_user']) ? $user[0]['id_user'] : null, $typeSport);
         $user_point = $pointData[$typeSport] ?? 0;
         $level = "";
         $can_join = false;
@@ -163,6 +164,13 @@ class DetailEvent extends BaseController
                 'selectedevent' => $selectedevent,
                 // 'nama' => $user['nama'],
                 // 'id_user' => $user['id_user'],
+                'pointData' => $pointData,
+                'title' => 'event',
+                'user_point' => $user_point,
+                'level' => $level,
+                'current_participants' => $countPeserta1,
+                'max_participants' => $max_participants,
+                'allUsers' => $allUsers,
                 'isi' => $latestProducts,
                 'title' => 'event',
                 'show_join_button' => $showJoinButton
@@ -258,6 +266,7 @@ class DetailEvent extends BaseController
                 'title' => 'event',
                 'user_point' => $user_point,
                 'level' => $level,
+                'allUsers' => $allUsers,
                 'current_participants' => $countPeserta1,
                 'max_participants' => $max_participants,
                 'show_join_button' => $showJoinButton
@@ -273,6 +282,7 @@ class DetailEvent extends BaseController
         $MyEvent = new MyEventMod();
         $peserta = new Peserta();
         $jjura = new Juara();
+        $allUsers = $userModel->findAll();
         $namaPengguna = $session->get('id');
         $HH = $jjura->where('id_event', $idevent)->findAll();
         if (!empty($HH)) {
@@ -369,11 +379,15 @@ class DetailEvent extends BaseController
             $jjura->saveuser($wew);
             $model = new Fisher();
             $idUsers = array_column($tabelLainData, 'id_user');
-            $pointData = $model
-            ->select("id_user, $typeSport")
-            ->whereIn('id_user', $idUsers)
-            ->orderBy($typeSport, 'DESC') // DESC = dari nilai terbesar ke terkecil
-            ->findAll();
+            $pointData = [];
+
+            if (!empty($idUsers)) {
+                $pointData = $model
+                    ->select("id_user, $typeSport")
+                    ->whereIn('id_user', $idUsers)
+                    ->orderBy($typeSport, 'DESC') // DESC = dari nilai terbesar ke terkecil
+                    ->findAll();
+                }
             $pairs = $this->ACAK($pointData, $typeSport);
             $data = [
                 'HH1' => $semii1,
@@ -413,6 +427,7 @@ class DetailEvent extends BaseController
                 'pairing_result' => $pairs,
                 'compe' => $tabelLainData,
                 'bra' => $tabelLainData,
+                'allUsers' => $allUsers,
                 'selectedevent' => $selectedevent,
                 'nama' => $user['nama'],
                 'id_user' => $user['id_user'],

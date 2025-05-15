@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/peserta.css') ?>">
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 <style>
     .entry-player-all-wrap1 {
         display: flex;
@@ -78,6 +79,12 @@
         font-size: 14px;
         vertical-align: middle;
     }
+    .modal-backdrop {
+      z-index: 1040 !important;
+    }
+    .modal-content {
+      z-index: 1050 !important;
+    }
 </style>
 <header class="hero">
     <center>
@@ -97,6 +104,10 @@
         }
     }
 </script>
+<form method="POST" action="/join/add" id="soloJoinForm" style="display:none;">
+  <input type="hidden" name="idevent" value="<?= esc($selectedevent[0]['id_event']) ?>" />
+  <input type="hidden" name="iduser" value="<?= esc($id_user) ?>" />
+</form>
 <div class="entry-player-all-wrap1">
     <?php if (!empty($compe)) {
         foreach ($compe as $isi) {
@@ -127,49 +138,83 @@
 <?php if (isset($nama)) : ?>
     <?php if ($id_user != $selectedevent[0]['id_user']) : ?>
 
-        <form id="join-form" method="POST" action="/join/add">
-            <input type="hidden" name="idevent" value="<?= esc($selectedevent[0]['id_event']) ?>" />
-            <input type="hidden" name="iduser"  value="<?= esc($id_user) ?>" />
-            <center>
-                <?php
-                    // cek kecocokan level antara user dan event
-                    $eventLevel = $selectedevent[0]['Tingkatan'];
-                    $userLevel  = $level;
-                    $canByLevel = ($userLevel === $eventLevel);
-                ?>
+        <!-- Trigger Join -->
+        <center>
+            <?php
+                $eventLevel = $selectedevent[0]['Tingkatan'];
+                $userLevel  = $level;
+                $canByLevel = ($userLevel === $eventLevel);
+            ?>
 
-                <?php if ($show_join_button && $canByLevel) : ?>
-                    <p>
-                      Level Anda: <strong><?= esc($userLevel) ?></strong> |  
-                      Poin: <?= esc($user_point) ?><br>
-                      Slot: <?= esc($current_participants) ?> / <?= esc($max_participants) ?>
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-primary fw-bold"
-                      style="margin-top: 2cm;"
-                      onclick="showConfirmation()"
-                    >JOIN</button>
+            <?php if ($show_join_button && $canByLevel) : ?>
+                <p>
+                Level Anda: <strong><?= esc($userLevel) ?></strong> |
+                Poin: <?= esc($user_point) ?><br>
+                Slot: <?= esc($current_participants) ?> / <?= esc($max_participants) ?>
+                </p>
+                <button
+                type="button"
+                class="btn btn-primary fw-bold"
+                style="margin-top: 2cm;"
+                onclick="showConfirmation()"
+                >JOIN</button>
+            <?php else : ?>
+                <div class="text-center mt-3">
+                    <p><strong>Tidak bisa JOIN:</strong></p>
+                    <?php if (!$canByLevel) : ?>
+                        <p>Level Anda (<strong><?= esc($userLevel) ?></strong>) tidak sesuai dengan level event (<strong><?= esc($eventLevel) ?></strong>).</p>
+                    <?php else : ?>
+                        <p><?= esc($join_status_message ?? 'Anda tidak memenuhi syarat poin/level untuk mengikuti event ini.') ?></p>
+                    <?php endif; ?>
+                    <p>Slot: <?= esc($current_participants) ?> / <?= esc($max_participants) ?></p>
+                </div>
+            <?php endif; ?>
+        </center>
 
-                <?php else : ?>
-                    <div class="text-center mt-3">  <!-- removed alert & bg classes -->
-                        <p><strong>Tidak bisa JOIN:</strong></p>
-                        <?php if (!$canByLevel) : ?>
-                            <p>Level Anda (<strong><?= esc($userLevel) ?></strong>) tidak sesuai dengan level event (<strong><?= esc($eventLevel) ?></strong>).</p>
-                        <?php else : ?>
-                            <p><?= esc($join_status_message ?? 'Anda tidak memenuhi syarat poin/level untuk mengikuti event ini.') ?></p>
-                        <?php endif; ?>
-                        <p>Slot: <?= esc($current_participants) ?> / <?= esc($max_participants) ?></p>
+
+        <!-- Modal Join Tim -->
+        <div id="teamModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document" style="margin:10% auto; max-width:500px;">
+                <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                    <h5 class="modal-title">Gabung Tim</h5>
+                    <button onclick="closeTeamModal()" style="border:none; background:none; font-size:20px;">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="/join/add" id="teamJoinForm">
+                    <input type="hidden" name="idevent" value="<?= esc($selectedevent[0]['id_event']) ?>" />
+                    <input type="hidden" name="iduser" value="<?= esc($id_user) ?>" />
+
+                    <?php for ($i = 1; $i < intval($selectedevent[0]['NOT']); $i++) : ?>
+                        <div class="mb-3">
+                        <label for="id_user<?= $i ?>">Anggota Tim <?= $i ?></label>
+                        <select name="id_user<?= $i ?>" class="form-control" required>
+                            <option value="">-- Pilih Anggota --</option>
+                            <?php foreach ($allUsers as $u): ?>
+                            <?php if ($u['id_user'] != $id_user): ?>
+                                <option value="<?= $u['id_user'] ?>"><?= esc($u['nama']) ?></option>
+                            <?php endif; ?>
+                            <?php endforeach; ?>
+                        </select>
+                        </div>
+                    <?php endfor; ?>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-success">Gabung</button>
+                        <button type="button" class="btn btn-secondary" onclick="closeTeamModal()">Batal</button>
                     </div>
-                <?php endif; ?>
-            </center>
-        </form>
-
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
     <?php endif; ?>
 <?php endif; ?>
 
 <script>
 function showConfirmation() {
+  const jumlahAnggota = <?= intval($selectedevent[0]['NOT']) ?>;
+
   Swal.fire({
     title: 'Yakin ingin bergabung?',
     html: `
@@ -179,14 +224,29 @@ function showConfirmation() {
     `,
     icon: 'question',
     showCancelButton: true,
-    confirmButtonText: 'Ya, Gabung!',
+    confirmButtonText: jumlahAnggota > 1 ? 'Ya, Pilih Tim!' : 'Ya, Gabung!',
     cancelButtonText: 'Tidak',
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#aaa'
   }).then((result) => {
     if (result.isConfirmed) {
-      document.getElementById('join-form').submit();
+      if (jumlahAnggota > 1) {
+        showTeamModal(); // Event tim
+      } else {
+        document.getElementById("soloJoinForm").submit(); // Event solo
+      }
     }
   });
 }
+
+function showTeamModal() {
+  $('#teamModal').modal('show');
+}
+
+function closeTeamModal() {
+  $('#teamModal').modal('hide');
+}
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+

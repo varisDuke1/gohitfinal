@@ -37,6 +37,7 @@ class Formevent extends BaseController
             'location' => $this->request->getPost("location"),
             'upload' => $imageName,
             'price' => $this->request->getPost("price"),
+            'NOT' => $this->request->getPost("NOT"), // Tambahan ini
             'Status_Acak' => "Belum",
             'Persetujuan' => "Belum",
             'Tingkatan' => "Null"
