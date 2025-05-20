@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\MyEventMod;
 use App\Models\Peserta;
 use App\Models\Juara;
+use App\Models\bracket;
 
 
 class DetailEvent extends BaseController
@@ -20,6 +21,7 @@ class DetailEvent extends BaseController
         $peserta = new Peserta();
         $jjura = new Juara();
         $fisherModel = new Fisher();
+        $bracket = new bracket();
         $allUsers = $userModel->findAll();
         $namaPengguna = $session->get('id');
         $selectedevent = $MyEvent->where('id_event', $idevent)->findAll();
@@ -80,6 +82,17 @@ class DetailEvent extends BaseController
         }
         $max_participants = isset($selectedevent[0]['participant']) ? $selectedevent[0]['participant'] : null;
         if (!$session->has('id')) {
+            $Bracket = $bracket->where('id_event', $idevent)->first();
+            $pesertaNama = [];
+            if ($Bracket) {
+                for ($i = 1; $i <= 8; $i++) {
+                    $key = 'peserta' . $i;
+                    if (!empty($Bracket[$key])) {
+                        $user = $userModel->getUserById($Bracket[$key]);
+                        $pesertaNama[$key] = $user ? $user['nama'] : 'Tidak ditemukan';
+                    }
+                }
+            }
             $peserta1 = $peserta->where('id_event', $idevent)->findAll();
             $primaryKeys = array_column($peserta1, 'id_user');
             $countPeserta1 = count($peserta1);
@@ -170,8 +183,10 @@ class DetailEvent extends BaseController
                 'level' => $level,
                 'current_participants' => $countPeserta1,
                 'max_participants' => $max_participants,
+                'pesertaNama' => $pesertaNama,
                 'allUsers' => $allUsers,
                 'isi' => $latestProducts,
+                'Bracket' => $Bracket,
                 'title' => 'event',
                 'show_join_button' => $showJoinButton
             ];
@@ -180,6 +195,17 @@ class DetailEvent extends BaseController
             $peserta1 = $peserta->where('id_event', $idevent)->findAll();
             $primaryKeys = array_column($peserta1, 'id_user');
             $countPeserta1 = count($peserta1);
+            $Bracket = $bracket->where('id_event', $idevent)->first();
+            $pesertaNama = [];
+            if ($Bracket) {
+                for ($i = 1; $i <= 8; $i++) {
+                    $key = 'peserta' . $i;
+                    if (!empty($Bracket[$key])) {
+                        $user = $userModel->getUserById($Bracket[$key]);
+                        $pesertaNama[$key] = $user ? $user['nama'] : 'Tidak ditemukan';
+                    }
+                }
+            }
             $showJoinButton = $countPeserta1 < 8;
             // Ambil data dari tabel_lain berdasarkan primary key yang terkait dengan peserta1
             $tabelLainData = [];
@@ -264,7 +290,9 @@ class DetailEvent extends BaseController
                 'isi' => $latestProducts,
                 'pointData' => $pointData,
                 'title' => 'event',
+                'Bracket' => $Bracket,
                 'user_point' => $user_point,
+                'pesertaNama' => $pesertaNama,
                 'level' => $level,
                 'allUsers' => $allUsers,
                 'current_participants' => $countPeserta1,
@@ -282,9 +310,21 @@ class DetailEvent extends BaseController
         $MyEvent = new MyEventMod();
         $peserta = new Peserta();
         $jjura = new Juara();
+        $bracket = new bracket();
         $allUsers = $userModel->findAll();
         $namaPengguna = $session->get('id');
+        $Bracket = $bracket->where('id_event', $idevent)->first();
         $HH = $jjura->where('id_event', $idevent)->findAll();
+        $pesertaNama = [];
+        if ($Bracket) {
+            for ($i = 1; $i <= 8; $i++) {
+                $key = 'peserta' . $i;
+                if (!empty($Bracket[$key])) {
+                    $user = $userModel->getUserById($Bracket[$key]);
+                    $pesertaNama[$key] = $user ? $user['nama'] : 'Tidak ditemukan';
+                }
+            }
+        }
         if (!empty($HH)) {
             $semi1 = $HH[0]['id_user-semi1'];
             $semi2 = $HH[0]['id_user-semi2'];
@@ -428,9 +468,11 @@ class DetailEvent extends BaseController
                 'compe' => $tabelLainData,
                 'bra' => $tabelLainData,
                 'allUsers' => $allUsers,
+                'Bracket' => $Bracket,
                 'selectedevent' => $selectedevent,
                 'nama' => $user['nama'],
                 'id_user' => $user['id_user'],
+                'pesertaNama' => $pesertaNama,
                 'isi' => $latestProducts,
                 'title' => 'event',
                 'show_join_button' => $showJoinButton
@@ -521,6 +563,7 @@ class DetailEvent extends BaseController
             return []; // Kosong jika tidak cukup peserta
         }
 
+        // Urutkan berdasarkan nilai tertinggi dari typeSport
         usort($pointData, function ($a, $b) use ($typeSport) {
             return $b[$typeSport] <=> $a[$typeSport];
         });
@@ -529,18 +572,21 @@ class DetailEvent extends BaseController
         $topRanked = array_slice($pointData, 0, $midPoint);
         $others = array_slice($pointData, $midPoint);
 
+        // Acak masing-masing kelompok
         $this->fisherYatesShuffle($topRanked);
         $this->fisherYatesShuffle($others);
 
         $pairs = [];
         $pairCount = min(count($topRanked), count($others));
 
+        // Buat pasangan dari dua kelompok
         for ($i = 0; $i < $pairCount; $i++) {
             $pair = [
                 $topRanked[$i]['id_user'],
                 $others[$i]['id_user']
             ];
 
+            // Random urutan pasangan
             if (rand(0, 1) === 1) {
                 $pair = array_reverse($pair);
             }
@@ -548,8 +594,17 @@ class DetailEvent extends BaseController
             $pairs[] = $pair;
         }
 
+        // Tambahkan peserta sisa (tanpa pasangan)
+        $remaining = array_slice($topRanked, $pairCount);
+        $remaining = array_merge($remaining, array_slice($others, $pairCount));
+
+        foreach ($remaining as $peserta) {
+            $pairs[] = [$peserta['id_user']]; // pasangan tunggal (bye)
+        }
+
         return $pairs;
     }
+
 
     
 
@@ -632,7 +687,7 @@ class DetailEvent extends BaseController
         }
 
         // Status tetap "Belum" agar bisa diacak lagi
-        $eventModel->update($id_event, ['Status_Acak' => 'Belum']);
+        $eventModel->StatusAcak($id_event, ['Status_Acak' => 'Belum']);
 
         return redirect()->back()->with('success', 'Peserta berhasil diacak.');
     }

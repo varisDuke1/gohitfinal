@@ -44,9 +44,14 @@
                                 <td class="ll"><?php if (isset($selectedevent[0]['participant'])) echo $selectedevent[0]['participant'] ?></td>
                             </tr>
                             <tr class="mm">
-                                <td>Contact Person</td>
+                                <td>Waktu</td>
                                 <td class="ll">:</td>
                                 <td class="ll"><?php if (isset($selectedevent[0]['time'])) echo $selectedevent[0]['time'] ?></td>
+                            </tr>
+                            <tr class="mm">
+                                <td>Level</td>
+                                <td class="ll">:</td>
+                                <td class="ll"><?php if (isset($selectedevent[0]['Tingkatan'])) echo $selectedevent[0]['Tingkatan'] ?></td>
                             </tr>
                         </tbody>
                     </table>
@@ -54,9 +59,6 @@
             </div>
             <div class="card mx-2">
                 <img src="<?= base_url('assets/image/' . $selectedevent[0]['upload']) ?>" style="height: 400px; width: 450px; " class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><strong>BELUM ADA YANG MENDAFTAR!!</strong></h5>
-                </div>
             </div>
         </div>
     </div>

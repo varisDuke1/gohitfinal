@@ -10,21 +10,11 @@ class Formevent extends BaseController
     public function form()
     {
         $imageFile = $this->request->getFile('upload');
-
-        // Check if the file is valid and move it to the public directory
         if ($imageFile->isValid() && !$imageFile->hasMoved()) {
-            // Generate a unique name for the image
             $imageName = $imageFile->getRandomName();
-
-            // Move the image to the public directory
             $imageFile->move(ROOTPATH . 'public/assets/image', $imageName);
-
-            // You can perform any additional actions or return a response here
         } else {
-            // Image upload failed
-            // You can handle the error or return an appropriate response
         }
-
         $model = new Eventm;
         $data = array(
             'id_user' => $this->request->getPost("l"),
@@ -38,14 +28,11 @@ class Formevent extends BaseController
             'upload' => $imageName,
             'price' => $this->request->getPost("price"),
             'NOT' => $this->request->getPost("NOT"), // Tambahan ini
-            'Status_Acak' => "Belum",
-            'Persetujuan' => "Belum",
-            'Tingkatan' => "Null"
+            'Status_Acak' => "Belum",'Persetujuan' => "Belum",'Tingkatan' => "Null"
         );
         $model->saveuser($data);
         echo '<script>
-                alert("Selamat! Berhasil Membuat Competition ");
-                window.location="' . base_url('/event') . '"
+                alert("Selamat! Berhasil Membuat Competition "); window.location="' . base_url('/event') . '"
             </script>';
     }
 }

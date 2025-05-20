@@ -43,9 +43,14 @@
                                 <td class="ll"><?php if (isset($selectedevent[0]['participant'])) echo $selectedevent[0]['participant'] ?></td>
                             </tr>
                             <tr class="mm">
-                                <td>Contact Person</td>
+                                <td>Waktu</td>
                                 <td class="ll">:</td>
                                 <td class="ll"><?php if (isset($selectedevent[0]['time'])) echo $selectedevent[0]['time'] ?></td>
+                            </tr>
+                            <tr class="mm">
+                                <td>Level</td>
+                                <td class="ll">:</td>
+                                <td class="ll"><?php if (isset($selectedevent[0]['Tingkatan'])) echo $selectedevent[0]['Tingkatan'] ?></td>
                             </tr>
                         </tbody>
                     </table>

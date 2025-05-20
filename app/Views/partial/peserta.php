@@ -136,15 +136,3 @@
 <?php else: ?>
     <div class="alert alert-info text-center mt-4">🔒 Hasil acakan telah dikunci. Tidak dapat diubah lagi.</div>
 <?php endif; ?>
-
-<!-- <?php foreach ($data as $d): ?>
-   <?= $d['id_user'] ?> - <?= $d['Badminton'] ?>
-<?php endforeach; ?>
-<?php if (!empty($pairing_result)): ?>
-    <h4>Hasil Pengacakan:</h4>
-    <ul>
-        <?php foreach ($pairing_result as $pair): ?>
-            <li><?= $pair[0] ?> vs <?= $pair[1] ?></li>
-        <?php endforeach; ?>
-    </ul>
-<?php endif; ?> -->

@@ -91,8 +91,6 @@
             width: 30.8333%\9;
         }
 
-        .split-two {}
-
         .split-one .round {
             margin: 0 2.5% 0 0;
         }
@@ -402,8 +400,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[7]['nama'])) {
-                                echo $bra[7]['nama'];
+                            if (isset($pesertaNama['peserta1'])) {
+                                echo $pesertaNama['peserta1'];
                             } else {
                                 echo "Data not available";
                             }
@@ -411,8 +409,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[1]['nama'])) {
-                                echo $bra[1]['nama'];
+                            if (isset($pesertaNama['peserta2'])) {
+                                echo $pesertaNama['peserta2'];
                             } else {
                                 echo "Data not available";
                             }
@@ -422,8 +420,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[0]['nama'])) {
-                                echo $bra[0]['nama'];
+                            if (isset($pesertaNama['peserta3'])) {
+                                echo $pesertaNama['peserta3'];
                             } else {
                                 echo "Data not available";
                             }
@@ -431,8 +429,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[6]['nama'])) {
-                                echo $bra[6]['nama'];
+                            if (isset($pesertaNama['peserta4'])) {
+                                echo $pesertaNama['peserta4'];
                             } else {
                                 echo "Data not available";
                             }
@@ -442,8 +440,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[5]['nama'])) {
-                                echo $bra[5]['nama'];
+                            if (isset($pesertaNama['peserta5'])) {
+                                echo $pesertaNama['peserta5'];
                             } else {
                                 echo "Data not available";
                             }
@@ -452,8 +450,8 @@
                         <li class="team2 team-bottom">
 
                             <?php
-                            if (isset($bra[3]['nama'])) {
-                                echo $bra[3]['nama'];
+                            if (isset($pesertaNama['peserta6'])) {
+                                echo $pesertaNama['peserta6'];
                             } else {
                                 echo "Data not available";
                             }
@@ -463,8 +461,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[2]['nama'])) {
-                                echo $bra[2]['nama'];
+                            if (isset($pesertaNama['peserta7'])) {
+                                echo $pesertaNama['peserta7'];
                             } else {
                                 echo "Data not available";
                             }
@@ -473,8 +471,8 @@
                         <li class="team2 team-bottom">
 
                             <?php
-                            if (isset($bra[4]['nama'])) {
-                                echo $bra[4]['nama'];
+                            if (isset($pesertaNama['peserta8'])) {
+                                echo $pesertaNama['peserta8'];
                             } else {
                                 echo "Data not available";
                             }
@@ -484,8 +482,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[23]['nama'])) {
-                                echo $bra[23]['nama'];
+                            if (isset($pesertaNama['peserta9'])) {
+                                echo $pesertaNama['peserta9'];
                             } else {
                                 echo "Data not available";
                             }
@@ -494,8 +492,8 @@
                         <li class="team2 team-bottom">
 
                             <?php
-                            if (isset($bra[24]['nama'])) {
-                                echo $bra[24]['nama'];
+                            if (isset($pesertaNama['peserta10'])) {
+                                echo $pesertaNama['peserta10'];
                             } else {
                                 echo "Data not available";
                             }
@@ -505,8 +503,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[22]['nama'])) {
-                                echo $bra[22]['nama'];
+                            if (isset($pesertaNama['peserta11'])) {
+                                echo $pesertaNama['peserta11'];
                             } else {
                                 echo "Data not available";
                             }
@@ -515,30 +513,8 @@
                         <li class="team2 team-bottom">
 
                             <?php
-                            if (isset($bra[26]['nama'])) {
-                                echo $bra[26]['nama'];
-                            } else {
-                                echo "Data not available";
-                            }
-                            ?>
-                        </li>
-                    </ul>
-                    <ul class="matchup" style="margin-top: 1cm;">
-                        <li class="team2 team-top">
-
-                            <?php
-                            if (isset($bra[25]['nama'])) {
-                                echo $bra[25]['nama'];
-                            } else {
-                                echo "Data not available";
-                            }
-                            ?>
-                        </li>
-                        <li class="team2 team-bottom">
-
-                            <?php
-                            if (isset($bra[27]['nama'])) {
-                                echo $bra[27]['nama'];
+                            if (isset($pesertaNama['peserta12'])) {
+                                echo $pesertaNama['peserta12'];
                             } else {
                                 echo "Data not available";
                             }
@@ -549,8 +525,8 @@
                         <li class="team2 team-top">
 
                             <?php
-                            if (isset($bra[21]['nama'])) {
-                                echo $bra[21]['nama'];
+                            if (isset($pesertaNama['peserta13'])) {
+                                echo $pesertaNama['peserta13'];
                             } else {
                                 echo "Data not available";
                             }
@@ -559,8 +535,30 @@
                         <li class="team2 team-bottom">
 
                             <?php
-                            if (isset($bra[20]['nama'])) {
-                                echo $bra[20]['nama'];
+                            if (isset($pesertaNama['peserta14'])) {
+                                echo $pesertaNama['peserta14'];
+                            } else {
+                                echo "Data not available";
+                            }
+                            ?>
+                        </li>
+                    </ul>
+                    <ul class="matchup" style="margin-top: 1cm;">
+                        <li class="team2 team-top">
+
+                            <?php
+                            if (isset($pesertaNama['peserta15'])) {
+                                echo $pesertaNama['peserta15'];
+                            } else {
+                                echo "Data not available";
+                            }
+                            ?>
+                        </li>
+                        <li class="team2 team-bottom">
+
+                            <?php
+                            if (isset($pesertaNama['peserta16'])) {
+                                echo $pesertaNama['peserta16'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1237,8 +1235,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[12]['nama'])) {
-                                echo $bra[12]['nama'];
+                            if (isset($pesertaNama['peserta17'])) {
+                                echo $pesertaNama['peserta17'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1246,8 +1244,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[11]['nama'])) {
-                                echo $bra[11]['nama'];
+                            if (isset($pesertaNama['peserta18'])) {
+                                echo $pesertaNama['peserta18'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1257,8 +1255,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[13]['nama'])) {
-                                echo $bra[13]['nama'];
+                            if (isset($pesertaNama['peserta19'])) {
+                                echo $pesertaNama['peserta19'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1266,8 +1264,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[10]['nama'])) {
-                                echo $bra[10]['nama'];
+                            if (isset($pesertaNama['peserta20'])) {
+                                echo $pesertaNama['peserta20'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1277,8 +1275,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[14]['nama'])) {
-                                echo $bra[14]['nama'];
+                            if (isset($pesertaNama['peserta21'])) {
+                                echo $pesertaNama['peserta21'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1286,8 +1284,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[9]['nama'])) {
-                                echo $bra[9]['nama'];
+                            if (isset($pesertaNama['peserta22'])) {
+                                echo $pesertaNama['peserta22'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1297,8 +1295,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[15]['nama'])) {
-                                echo $bra[15]['nama'];
+                            if (isset($pesertaNama['peserta23'])) {
+                                echo $pesertaNama['peserta23'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1306,8 +1304,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[8]['nama'])) {
-                                echo $bra[8]['nama'];
+                            if (isset($pesertaNama['peserta24'])) {
+                                echo $pesertaNama['peserta24'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1317,8 +1315,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[31]['nama'])) {
-                                echo $bra[31]['nama'];
+                            if (isset($pesertaNama['peserta25'])) {
+                                echo $pesertaNama['peserta25'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1326,8 +1324,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[16]['nama'])) {
-                                echo $bra[16]['nama'];
+                            if (isset($pesertaNama['peserta26'])) {
+                                echo $pesertaNama['peserta26'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1337,8 +1335,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[30]['nama'])) {
-                                echo $bra[30]['nama'];
+                            if (isset($pesertaNama['peserta27'])) {
+                                echo $pesertaNama['peserta27'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1346,8 +1344,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[29]['nama'])) {
-                                echo $bra[29]['nama'];
+                            if (isset($pesertaNama['peserta28'])) {
+                                echo $pesertaNama['peserta28'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1357,8 +1355,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[17]['nama'])) {
-                                echo $bra[17]['nama'];
+                            if (isset($pesertaNama['peserta29'])) {
+                                echo $pesertaNama['peserta29'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1366,8 +1364,8 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[19]['nama'])) {
-                                echo $bra[19]['nama'];
+                            if (isset($pesertaNama['peserta30'])) {
+                                echo $pesertaNama['peserta30'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1377,8 +1375,8 @@
                     <ul class="matchup" style="margin-top: 1cm;">
                         <li class="team2 team-top">
                             <?php
-                            if (isset($bra[18]['nama'])) {
-                                echo $bra[18]['nama'];
+                            if (isset($pesertaNama['peserta31'])) {
+                                echo $pesertaNama['peserta31'];
                             } else {
                                 echo "Data not available";
                             }
@@ -1386,12 +1384,13 @@
                         </li>
                         <li class="team2 team-bottom">
                             <?php
-                            if (isset($bra[28]['nama'])) {
-                                echo $bra[28]['nama'];
+                            if (isset($pesertaNama['peserta32'])) {
+                                echo $pesertaNama['peserta32'];
                             } else {
                                 echo "Data not available";
                             }
                             ?>
+                        </li>
                     </ul>
                 </div> <!-- END ROUND ONE -->
             </div>

@@ -178,6 +178,7 @@
             <select name="Persetujuan" class="form-control" id="edit-Persetujuan" required>
               <option value="Belum">Belum</option>
               <option value="Sudah">Sudah</option>
+              <option value="Sudah">Tolak</option>
             </select>
           </div>
 

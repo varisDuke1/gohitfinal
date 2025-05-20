@@ -106,7 +106,7 @@
 </script>
 <form method="POST" action="/join/add" id="soloJoinForm" style="display:none;">
   <input type="hidden" name="idevent" value="<?= esc($selectedevent[0]['id_event']) ?>" />
-  <input type="hidden" name="iduser" value="<?= esc($id_user) ?>" />
+  <input type="hidden" name="iduser" value="<?= esc($id_user ?? '') ?>">
 </form>
 <div class="entry-player-all-wrap1">
     <?php if (!empty($compe)) {

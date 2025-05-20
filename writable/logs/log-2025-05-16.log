@@ -1,0 +1,154 @@
+INFO - 2025-05-16 13:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:44:42 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'main.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:44:43 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'style.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:44:43 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('images', 'bg-01.jpg')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:44:48 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'main.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:44:48 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'style.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:44:48 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('images', 'bg-01.jpg')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 13:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:45:34 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'main.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:45:34 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'style.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 13:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 13:45:34 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('images', 'bg-01.jpg')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 14:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-16 14:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 14:37:25 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'main.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 14:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 14:37:25 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('css', 'style.css')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-05-16 14:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 14:37:25 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\system\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Models\Fisher.php(20): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\DetailEvent.php(67): App\Models\Fisher->getUserPointBySport(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->index('images', 'bg-01.jpg')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
