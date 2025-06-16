@@ -41,8 +41,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[7]['nama'])) {
-                                                            echo $bra[7]['nama'];
+                                                        if (isset($pesertaNama['peserta1'])) {
+                                                            echo $pesertaNama['peserta1'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -66,8 +66,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[1]['nama'])) {
-                                                            echo $bra[1]['nama'];
+                                                        if (isset($pesertaNama['peserta2'])) {
+                                                            echo $pesertaNama['peserta2'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -93,8 +93,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[0]['nama'])) {
-                                                            echo $bra[0]['nama'];
+                                                        if (isset($pesertaNama['peserta3'])) {
+                                                            echo $pesertaNama['peserta3'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -118,8 +118,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[6]['nama'])) {
-                                                            echo $bra[6]['nama'];
+                                                        if (isset($pesertaNama['peserta4'])) {
+                                                            echo $pesertaNama['peserta4'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -145,8 +145,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[5]['nama'])) {
-                                                            echo $bra[5]['nama'];
+                                                        if (isset($pesertaNama['peserta5'])) {
+                                                            echo $pesertaNama['peserta5'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -170,8 +170,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[3]['nama'])) {
-                                                            echo $bra[3]['nama'];
+                                                        if (isset($pesertaNama['peserta6'])) {
+                                                            echo $pesertaNama['peserta6'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -197,8 +197,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[2]['nama'])) {
-                                                            echo $bra[2]['nama'];
+                                                        if (isset($pesertaNama['peserta7'])) {
+                                                            echo $pesertaNama['peserta7'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -222,8 +222,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[4]['nama'])) {
-                                                            echo $bra[4]['nama'];
+                                                        if (isset($pesertaNama['peserta8'])) {
+                                                            echo $pesertaNama['peserta8'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -254,11 +254,11 @@
                                                     <div class="entry-player-name">
                                                         <select class="form-control player-dropdown" id="playerDropdown1">
                                                             <option value="">--Pilih--</option>
-                                                            <?php if (isset($bra[7]['id_user']) && isset($bra[7]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[7]['id_user'] ?>"><?php echo $bra[7]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta1']) && isset($pesertaNama['peserta1'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta1'] ?>"><?php echo $pesertaNama['peserta1'] ?></option>
                                                             <?php endif; ?>
-                                                            <?php if (isset($bra[1]['id_user']) && isset($bra[1]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[1]['id_user'] ?>"><?php echo $bra[1]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta2']) && isset($pesertaNama['peserta2'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta2'] ?>"><?php echo $pesertaNama['peserta2'] ?></option>
                                                             <?php endif; ?>
                                                             <!-- Tambahkan pilihan nama lain sesuai kebutuhan -->
                                                         </select>
@@ -283,11 +283,11 @@
                                                     <div class="entry-player-name">
                                                         <select class="form-control player-dropdown1" id="playerDropdown2">
                                                             <option value="">--Pilih--</option>
-                                                            <?php if (isset($bra[0]['id_user']) && isset($bra[0]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[0]['id_user'] ?>"><?php echo $bra[0]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta3']) && isset($pesertaNama['peserta3'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta3'] ?>"><?php echo $pesertaNama['peserta3'] ?></option>
                                                             <?php endif; ?>
-                                                            <?php if (isset($bra[6]['id_user']) && isset($bra[6]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[6]['id_user'] ?>"><?php echo $bra[6]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta4']) && isset($pesertaNama['peserta4'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta4'] ?>"><?php echo $pesertaNama['peserta4'] ?></option>
                                                             <?php endif; ?>
                                                             <!-- Tambahkan pilihan nama lain sesuai kebutuhan -->
                                                         </select>
@@ -314,11 +314,11 @@
                                                     <div class="entry-player-name">
                                                         <select class="form-control player-dropdown2" id="playerDropdown3">
                                                             <option value="">--Pilih--</option>
-                                                            <?php if (isset($bra[5]['id_user']) && isset($bra[5]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[5]['id_user'] ?>"><?php echo $bra[5]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta5']) && isset($pesertaNama['peserta5'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta5'] ?>"><?php echo $pesertaNama['peserta5'] ?></option>
                                                             <?php endif; ?>
-                                                            <?php if (isset($bra[3]['id_user']) && isset($bra[3]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[3]['id_user'] ?>"><?php echo $bra[3]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta6']) && isset($pesertaNama['peserta6'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta6'] ?>"><?php echo $pesertaNama['peserta6'] ?></option>
                                                             <?php endif; ?>
                                                             <!-- Tambahkan pilihan nama lain sesuai kebutuhan -->
                                                         </select>
@@ -343,11 +343,11 @@
                                                     <div class="entry-player-name">
                                                         <select class="form-control player-dropdown3" id="playerDropdown4">
                                                             <option value="">--Pilih--</option>
-                                                            <?php if (isset($bra[2]['id_user']) && isset($bra[2]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[2]['id_user'] ?>"><?php echo $bra[2]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta7']) && isset($pesertaNama['peserta7'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta7'] ?>"><?php echo $pesertaNama['peserta7'] ?></option>
                                                             <?php endif; ?>
-                                                            <?php if (isset($bra[4]['id_user']) && isset($bra[4]['nama'])) : ?>
-                                                                <option value="<?php echo $bra[4]['id_user'] ?>"><?php echo $bra[4]['nama'] ?></option>
+                                                            <?php if (isset($Bracket['peserta8']) && isset($pesertaNama['peserta8'])) : ?>
+                                                                <option value="<?php echo $Bracket['peserta8'] ?>"><?php echo $pesertaNama['peserta8'] ?></option>
                                                             <?php endif; ?>
                                                             <!-- Tambahkan pilihan nama lain sesuai kebutuhan -->
                                                         </select>

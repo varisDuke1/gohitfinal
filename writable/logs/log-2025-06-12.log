@@ -1,0 +1,165 @@
+INFO - 2025-06-12 03:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:19:56 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:19:56 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:19:56 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:15 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:15 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:15 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:20 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:20 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:20 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 03:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:23 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:23 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')
+INFO - 2025-06-12 03:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 03:21:24 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 24.
+ 1 APPPATH\Views\detaileventp.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(481): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\P2MW\\hehe\\gohitfinal\\public\\index.php')

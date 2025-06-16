@@ -85,7 +85,7 @@ class DetailEvent extends BaseController
             $Bracket = $bracket->where('id_event', $idevent)->first();
             $pesertaNama = [];
             if ($Bracket) {
-                for ($i = 1; $i <= 8; $i++) {
+                for ($i = 1; $i <= 32; $i++) {
                     $key = 'peserta' . $i;
                     if (!empty($Bracket[$key])) {
                         $user = $userModel->getUserById($Bracket[$key]);
@@ -96,7 +96,7 @@ class DetailEvent extends BaseController
             $peserta1 = $peserta->where('id_event', $idevent)->findAll();
             $primaryKeys = array_column($peserta1, 'id_user');
             $countPeserta1 = count($peserta1);
-            $showJoinButton = $countPeserta1 < 8;
+            $showJoinButton = $countPeserta1 < $max_participants;
             // Ambil data dari tabel_lain berdasarkan primary key yang terkait dengan peserta1
             $tabelLainData = [];
             if (!empty($primaryKeys)) {
@@ -198,7 +198,7 @@ class DetailEvent extends BaseController
             $Bracket = $bracket->where('id_event', $idevent)->first();
             $pesertaNama = [];
             if ($Bracket) {
-                for ($i = 1; $i <= 8; $i++) {
+                for ($i = 1; $i <= 32; $i++) {
                     $key = 'peserta' . $i;
                     if (!empty($Bracket[$key])) {
                         $user = $userModel->getUserById($Bracket[$key]);
@@ -206,7 +206,7 @@ class DetailEvent extends BaseController
                     }
                 }
             }
-            $showJoinButton = $countPeserta1 < 8;
+            $showJoinButton = $countPeserta1 < $max_participants;
             // Ambil data dari tabel_lain berdasarkan primary key yang terkait dengan peserta1
             $tabelLainData = [];
             if (!empty($primaryKeys)) {
@@ -317,7 +317,7 @@ class DetailEvent extends BaseController
         $HH = $jjura->where('id_event', $idevent)->findAll();
         $pesertaNama = [];
         if ($Bracket) {
-            for ($i = 1; $i <= 8; $i++) {
+            for ($i = 1; $i <= 32; $i++) {
                 $key = 'peserta' . $i;
                 if (!empty($Bracket[$key])) {
                     $user = $userModel->getUserById($Bracket[$key]);
@@ -364,6 +364,7 @@ class DetailEvent extends BaseController
             $semi1 = $semi2 = $semi3 = $semi4 = $semi5 = $semi6 = $semi7 = $semi8 = $semi9 = $semi10 = $semi11 = $semi12 = $semi13 = $semi14 = $semi15 = $semi16 = $Q1 = $Q2 = $Q3 = $Q4 = $Q5 = $Q6 = $Q7 = $Q8 = $P1 = $P2 = $P3 = $P4 = $final5 = $final6 = $j2 = $j1 = $j3 = null;
         }
         $selectedevent = $MyEvent->where('id_event', $idevent)->findAll();
+        $max_participants = isset($selectedevent[0]['participant']) ? $selectedevent[0]['participant'] : null;
         $typeSport = isset($selectedevent[0]['type_sport']) ? $selectedevent[0]['type_sport'] : null;
         if (!$session->has('id')) {
             return redirect()->to(base_url('/home'));
@@ -371,7 +372,7 @@ class DetailEvent extends BaseController
             $peserta1 = $peserta->where('id_event', $idevent)->findAll();
             $primaryKeys = array_column($peserta1, 'id_user');
             $countPeserta1 = count($peserta1);
-            $showJoinButton = $countPeserta1 < 8;
+            $showJoinButton = $countPeserta1 < $max_participants;
             // Ambil data dari tabel_lain berdasarkan primary key yang terkait dengan peserta1
             $tabelLainData = [];
             if (!empty($primaryKeys)) {
@@ -516,46 +517,6 @@ class DetailEvent extends BaseController
             }
         }
     }
-    // public function ACAK($pointData, $typeSport)
-    // {
-    //     if (count($pointData) < 2) {
-    //         return view('pairing_view', ['error' => 'Jumlah peserta kurang dari 2.']);
-    //     }
-    
-    //     // Urutkan berdasarkan ranking / skor tertinggi di $typeSport
-    //     usort($pointData, function ($a, $b) use ($typeSport) {
-    //         return $b[$typeSport] <=> $a[$typeSport];
-    //     });
-    
-    //     // Bagi menjadi dua bagian
-    //     $midPoint = ceil(count($pointData) / 2);
-    //     $topRanked = array_slice($pointData, 0, $midPoint);
-    //     $others = array_slice($pointData, $midPoint);
-    
-    //     // Acak dengan Fisher-Yates
-    //     $this->fisherYatesShuffle($topRanked);
-    //     $this->fisherYatesShuffle($others);
-    
-    //     // Buat pasangan
-    //     $pairs = [];
-    //     $pairCount = min(count($topRanked), count($others));
-    
-    //     for ($i = 0; $i < $pairCount; $i++) {
-    //         $pair = [
-    //             $topRanked[$i]['id_user'], // Atau ['name'] kalau kamu punya
-    //             $others[$i]['id_user']
-    //         ];
-    
-    //         // Acak posisi pasangan
-    //         if (rand(0, 1) === 1) {
-    //             $pair = array_reverse($pair);
-    //         }
-    
-    //         $pairs[] = $pair;
-    //     }
-    
-    //     return view('pairing_view', ['pairs' => $pairs]);
-    // }
 
     public function ACAK($pointData, $typeSport)
     {
@@ -604,9 +565,6 @@ class DetailEvent extends BaseController
 
         return $pairs;
     }
-
-
-    
 
     private function fisherYatesShuffle(&$array)
     {

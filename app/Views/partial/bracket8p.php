@@ -41,8 +41,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[7]['nama'])) {
-                                                            echo $bra[7]['nama'];
+                                                        if (isset($pesertaNama['peserta1'])) {
+                                                            echo $pesertaNama['peserta1'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -66,8 +66,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[1]['nama'])) {
-                                                            echo $bra[1]['nama'];
+                                                        if (isset($pesertaNama['peserta2'])) {
+                                                            echo $pesertaNama['peserta2'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -93,8 +93,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[0]['nama'])) {
-                                                            echo $bra[0]['nama'];
+                                                        if (isset($pesertaNama['peserta3'])) {
+                                                            echo $pesertaNama['peserta3'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -118,8 +118,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[6]['nama'])) {
-                                                            echo $bra[6]['nama'];
+                                                        if (isset($pesertaNama['peserta4'])) {
+                                                            echo $pesertaNama['peserta4'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -145,8 +145,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[5]['nama'])) {
-                                                            echo $bra[5]['nama'];
+                                                        if (isset($pesertaNama['peserta5'])) {
+                                                            echo $pesertaNama['peserta5'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -170,8 +170,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[3]['nama'])) {
-                                                            echo $bra[3]['nama'];
+                                                        if (isset($pesertaNama['peserta6'])) {
+                                                            echo $pesertaNama['peserta6'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -197,8 +197,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[2]['nama'])) {
-                                                            echo $bra[2]['nama'];
+                                                        if (isset($pesertaNama['peserta7'])) {
+                                                            echo $pesertaNama['peserta7'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -222,8 +222,8 @@
                                                 <div class="entry-player-info-wrap">
                                                     <div class="entry-player-name">
                                                         <?php
-                                                        if (isset($bra[4]['nama'])) {
-                                                            echo $bra[4]['nama'];
+                                                        if (isset($pesertaNama['peserta8'])) {
+                                                            echo $pesertaNama['peserta8'];
                                                         } else {
                                                             echo "Data not available";
                                                         }
@@ -395,7 +395,7 @@
         </section>
     </body>
 </center>
-<script>
+<!-- <script>
     const playerDropdowns = document.querySelectorAll('.player-dropdown');
     const playerDropdowns1 = document.querySelectorAll('.player-dropdown1');
     const playerDropdowns2 = document.querySelectorAll('.player-dropdown2');
@@ -591,4 +591,4 @@
             }
         });
     });
-</script>
+</script> -->
