@@ -29,7 +29,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 $routes->get('/admin/dashboard', 'Admin\DashboardController::index'); //admin dashboard
-$routes->get('/admin/turnamen/index', 'Admin\Tournament::index'); //admin Turney list
+$routes->get('/admin/turnamen/index', 'Admin\Tournament::index');
+$routes->get('/admin/turnamen/Log', 'Admin\Tournament::Log'); //admin Turney list
 $routes->get('/admin/customer/index', 'Admin\Customer::index'); // open admin customer data
 $routes->get('/admin/transaksi/index', 'Admin\Transaksi::index'); //admin history data from API midtrans
 // testing payment success
