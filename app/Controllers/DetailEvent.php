@@ -582,48 +582,77 @@ class DetailEvent extends BaseController
         $eventModel = new \App\Models\Eventm();
         $bracketModel = new \App\Models\bracket();
         $model = new Fisher();
-        $userModel = new user();
+        $userModel = new \App\Models\user();
 
-        // Ambil data event untuk ambil type_sport dan status_acak
-        $selectedevent = $eventModel->where('id_event', $id_event)->findAll();
+        // Ambil data event
+        $selectedevent = $eventModel->where('id_event', $id_event)->first();
         if (!$selectedevent) {
             return redirect()->back()->with('error', 'Event tidak ditemukan.');
         }
 
-        // ❗ Cek status acak
-        if ($selectedevent[0]['Status_Acak'] === 'Sudah') {
-            return redirect()->back()->with('error', 'Pengacakan sudah difinalisasi dan tidak dapat diubah lagi.');
+        if ($selectedevent['Status_Acak'] === 'Sudah') {
+            return redirect()->back()->with('error', 'Pengacakan sudah difinalisasi.');
         }
 
-        $typeSport = $selectedevent[0]['type_sport'];
-        if (!$typeSport) {
-            return redirect()->back()->with('error', 'Jenis olahraga tidak ditemukan.');
+        $typeSport = $selectedevent['type_sport'];
+        $jumlahAnggota = (int)$selectedevent['NOT']; // NOT = Jumlah anggota tim (1-5)
+
+        if (!$typeSport || $jumlahAnggota < 1 || $jumlahAnggota > 5) {
+            return redirect()->back()->with('error', 'Konfigurasi event tidak valid.');
         }
 
-        // Ambil peserta untuk event ini
-        $primaryKeys = $pesertaModel->where('id_event', $id_event)->findColumn('id_user');
-        if (!$primaryKeys) {
+        // Ambil semua peserta
+        $allTeams = $pesertaModel->where('id_event', $id_event)->findAll();
+        if (!$allTeams) {
             return redirect()->back()->with('error', 'Peserta tidak ditemukan.');
         }
 
-        $tabelLainData = $userModel->whereIn('id_user', $primaryKeys)->findAll();
-        $idUsers = array_column($tabelLainData, 'id_user');
+        // ✅ Validasi 80% peserta dari target
+        $jumlahPesertaAktif = count($allTeams); // Jumlah baris tim terdaftar
+        $kuotaPeserta = (int)$selectedevent['participant'];
+        $batasMinimal = ceil($kuotaPeserta * 0.8);
 
-        // Ambil point data
-        $pointData = $model
-            ->select("id_user, $typeSport")
-            ->whereIn('id_user', $idUsers)
-            ->orderBy($typeSport, 'DESC')
-            ->findAll();
-
-        if (!$pointData || count($pointData) < 2) {
-            return redirect()->back()->with('error', 'Jumlah peserta tidak mencukupi.');
+        if ($jumlahPesertaAktif < $batasMinimal) {
+            return redirect()->back()->with('error', "Pengacakan hanya dapat dilakukan jika minimal 80% kuota peserta terpenuhi. Saat ini terdaftar $jumlahPesertaAktif dari $kuotaPeserta peserta (minimal: $batasMinimal).");
         }
 
-        // Jalankan ACAK
+        $pointData = [];
+
+        foreach ($allTeams as $team) {
+            // Buat array ID anggota sesuai jumlah NOT
+            $idAnggota = [];
+            for ($i = 0; $i < $jumlahAnggota; $i++) {
+                $key = $i === 0 ? 'id_user' : 'id_user' . $i;
+                if (!empty($team[$key])) {
+                    $idAnggota[] = $team[$key];
+                }
+            }
+
+            // Ambil poin tiap anggota dari tabel point
+            $points = $model->select("id_user, $typeSport")
+                            ->whereIn('id_user', $idAnggota)
+                            ->findAll();
+
+            $total = 0;
+            foreach ($points as $p) {
+                $total += (int)$p[$typeSport];
+            }
+
+            // Simpan ID user utama dan total poin tim
+            $pointData[] = [
+                'id_user' => $team['id_user'], // ID utama sebagai perwakilan tim
+                $typeSport => $total
+            ];
+        }
+
+        if (count($pointData) < 2) {
+            return redirect()->back()->with('error', 'Jumlah tim tidak mencukupi.');
+        }
+
+        // Jalankan pengacakan Fisher-Yates
         $pairs = $this->ACAK($pointData, $typeSport);
 
-        // Ubah $pairs jadi flat list
+        // Flatten pasangan
         $flatList = [];
         foreach ($pairs as $pair) {
             foreach ($pair as $id) {
@@ -631,7 +660,7 @@ class DetailEvent extends BaseController
             }
         }
 
-        // Simpan ke bracket
+        // Simpan ke dalam tabel bracket
         $bracketData = ['id_event' => $id_event];
         foreach ($flatList as $i => $id_peserta) {
             $bracketData["peserta" . ($i + 1)] = $id_peserta;
@@ -644,11 +673,12 @@ class DetailEvent extends BaseController
             $bracketModel->insert($bracketData);
         }
 
-        // Status tetap "Belum" agar bisa diacak lagi
-        $eventModel->StatusAcak($id_event, ['Status_Acak' => 'Belum']);
+        // Biarkan status pengacakan tetap "Belum"
+        $eventModel->update($id_event, ['Status_Acak' => 'Belum']);
 
-        return redirect()->back()->with('success', 'Peserta berhasil diacak.');
+        return redirect()->back()->with('success', 'Tim berhasil diacak.');
     }
+
     public function selesaiAcak($id_event)
     {
         $eventModel = new \App\Models\Eventm();
