@@ -37,6 +37,9 @@ $routes->get('/admin/transaksi/index', 'Admin\Transaksi::index'); //admin histor
 $routes->get('/paymentsukses', 'Payment::addTransaction');
 $routes->get('/paymentsukses1', 'Payment::addTransaction1');
 $routes->get('/paymentsukses2', 'Payment::addTransaction2');
+$routes->get('admin/detailpoint/(:num)', 'Admin\Customer::detailPoint/$1');
+$routes->post('admin/verifikasi', 'Admin\Customer::verifikasi');
+
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::home');
 $routes->get('/late', 'Home::late');
@@ -45,6 +48,8 @@ $routes->get('/login', 'Home::login');
 $routes->post('/auth/login', 'Login::login');
 $routes->get('/reg', 'Home::reg');
 $routes->post('/reg/add', 'Login::add');
+$routes->get('/profile', 'Login::profile');
+$routes->post('/profile/update', 'Login::update');
 $routes->get('/ww', 'Home::ww');
 $routes->get('/form', 'Home::form');
 $routes->post('/form/add', 'Formevent::form');

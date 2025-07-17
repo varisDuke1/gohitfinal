@@ -1,6 +1,6 @@
 <?= $this->include('partial/header2') ?>
 <div>
-
+    
     <div class="landing-container">
         <div class="form-container">
             <img style="height: 170px; width: 170px" src="<?= base_url('assets/image/piala.png') ?>" alt="">

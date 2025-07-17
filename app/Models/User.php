@@ -7,6 +7,11 @@ use CodeIgniter\Model;
 class User extends Model
 {
     protected $table = 'user';
+    protected $primaryKey = 'id_user'; // Primary key tabel penggunana
+    protected $allowedFields = [
+    'nama', 'nickname', 'phone', 'address', 'email', 'country', 'photo', 'serti', 'password', 'setuju'
+    ];
+
 
     public function getuser($id = false)
     {
@@ -22,8 +27,6 @@ class User extends Model
         $builder = $this->db->table($this->table);
         return $builder->insert($data);
     }
-    protected $primaryKey = 'id_user'; // Primary key tabel pengguna
-    protected $allowedFields = ['email', 'password', 'nama']; // Kolom yang dapat diisi pada tabel pengguna
 
     public function getUserByEmail($email)
     {

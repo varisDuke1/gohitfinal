@@ -10,32 +10,6 @@ use App\Models\Eventm;
 class Login extends BaseController
 {
     protected $session;
-    // public function index()
-    // {
-    //     $session = session();
-    //     $MyEvent = new MyEventMod();
-    //     $namaPengguna = $session->get('id');
-    //     $latestProducts = $MyEvent->findAll(3);
-    //     if (!$session->has('id')) {
-
-    //         $data = [
-    //             'compe' => $latestProducts,
-    //             'title' => 'Log In'
-    //         ];
-    //         echo view("home", $data);
-    //     } else {
-    //         $userModel = new user();
-    //         $user = $userModel->getUserById($namaPengguna);
-    //         $data = [
-    //             'nama' => $user['nama'],
-    //             'id' => $namaPengguna,
-    //             'compe' => $latestProducts,
-    //             'title' => 'Log In'
-    //         ];
-    //         echo view("home", $data);
-    //     }
-    // }
-
     public function login()
     {
         $email = $this->request->getPost('username');
@@ -100,5 +74,106 @@ class Login extends BaseController
             alert("Selamat! Berhasil Menambah Data ");
             window.location="' . base_url('/login') . '"
         </script>';
+    }
+    public function profile()
+    {
+        $session = session();
+        $userModel = new user();
+        $namaPengguna = $session->get('id');
+        
+        if (!$session->has('id')) {
+            $data = [
+                'title' => 'Profile'
+                
+            ];
+            echo view("home", $data);
+        } else {
+            $userModel = new user();
+            $user = $userModel->getUserById($namaPengguna);
+            $data = [
+                'nama' => $user['nama'],
+                'user'  => $user,
+                'id' => $namaPengguna,
+                'title' => 'Profile'
+            ];
+            echo view("profile", $data);
+        }
+    }
+    public function update()
+    {
+        $session = session();
+        $userId = $session->get('id');
+
+        if (!$userId) {
+            return redirect()->to('/login');
+        }
+
+        $userModel = new User();
+        $user = $userModel->getUserById($userId);
+
+        $data = [];
+
+        // Ambil inputan form
+        $name     = $this->request->getPost('name');
+        $nickname = $this->request->getPost('nickname');
+        $phone    = $this->request->getPost('phone');
+        $address  = $this->request->getPost('address');
+        $email    = $this->request->getPost('email');
+        $country  = $this->request->getPost('country');
+
+        if (!empty($name))     $data['nama']     = $name;
+        if (!empty($nickname)) $data['nickname'] = $nickname;
+        if (!empty($phone))    $data['phone']    = $phone;
+        if (!empty($address))  $data['address']  = $address;
+        if (!empty($email))    $data['email']    = $email;
+        if (!empty($country))  $data['country']  = $country;
+
+        // Password update
+        $oldPassword     = $this->request->getPost('old_password');
+        $newPassword     = $this->request->getPost('new_password');
+        $confirmPassword = $this->request->getPost('confirm_password');
+
+        if (!empty($oldPassword) || !empty($newPassword) || !empty($confirmPassword)) {
+            if (empty($oldPassword) || empty($newPassword) || empty($confirmPassword)) {
+                return redirect()->back()->with('error', 'Semua kolom password harus diisi jika ingin mengubah password.');
+            }
+
+            // Tanpa hash (langsung dibandingkan nilai string)
+            if ($oldPassword !== $user['password']) {
+                return redirect()->back()->with('error', 'Password lama salah.');
+            }
+
+            if ($newPassword !== $confirmPassword) {
+                return redirect()->back()->with('error', 'Konfirmasi password tidak cocok.');
+            }
+
+            $data['password'] = $newPassword; // Simpan langsung (tidak di-hash)
+        }
+
+        // Upload foto profil
+        $photo = $this->request->getFile('photo');
+        if ($photo && $photo->isValid() && !$photo->hasMoved()) {
+            $photoName = $photo->getRandomName();
+            $photo->move(ROOTPATH . 'public/assets/image', $photoName);
+            $data['photo'] = $photoName;
+        }
+
+        // Upload sertifikat
+        $serti = $this->request->getFile('serti');
+        if ($serti && $serti->isValid() && !$serti->hasMoved()) {
+            $sertiName = $serti->getRandomName();
+            $serti->move(ROOTPATH . 'public/assets/serti', $sertiName);
+            $data['serti'] = $sertiName;
+            // Set kolom setuju = 'belum' hanya jika upload serti dilakukan
+            $data['setuju'] = 'belum';
+        }
+
+        // Simpan jika ada data yang diubah
+        if (!empty($data)) {
+            $userModel->update($userId, $data);
+            return redirect()->to('/profile')->with('success', 'Profil berhasil diperbarui.');
+        } else {
+            return redirect()->to('/profile')->with('info', 'Tidak ada data yang diubah.');
+        }
     }
 }

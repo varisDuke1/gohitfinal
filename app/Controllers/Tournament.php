@@ -28,4 +28,5 @@ class Tournament extends BaseController
 
         return redirect()->to('/admin/turnamen/index');
     }
+    
 }

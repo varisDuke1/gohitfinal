@@ -176,8 +176,8 @@
                     </svg>
                 </div>
                 <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 scale-95 transform origin-top-right transition-all duration-200 invisible">
-                    <a href="/change-password" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
-                        <i class="fas fa-key mr-2"></i> Ganti Password
+                    <a href="/profile" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        <i class="fas fa-key mr-2"></i> Profile
                     </a>
                     <a href="/settings" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
                         <i class="fas fa-cog mr-2"></i> Settings
